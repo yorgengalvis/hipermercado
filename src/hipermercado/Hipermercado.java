@@ -7,7 +7,7 @@ package hipermercado;
 
 /**
  *
- * @author YorgenGalvis
+ * @author TODOSYYO
  */
 public class Hipermercado {
 
