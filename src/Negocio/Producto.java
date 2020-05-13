@@ -1,17 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package hipermercado;
 
+package Negocio;
+
+import java.util.Calendar;
 import java.util.Date;
 
-/**
- *
- * @author USER
- */
 public class Producto {
+    
     /* una línea de producto tiene un nombre, un código, una descripción,
 un precio por unidad y una fecha de introducción a la sucursal.*/
     
@@ -19,17 +13,27 @@ un precio por unidad y una fecha de introducción a la sucursal.*/
     private String codigo;
     private String descripcion;
     private double precio;
-    private Date fechaDeIntroduccion;
+    private String fechaDeIntroduccion;
 
     public Producto() {
     }
 
-    public Producto(String nombre, String codigo, String descripcion, double precio, Date fechaDeIntroduccion) {
+    public Producto(String nombre, String codigo, String descripcion, double precio) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
-        this.fechaDeIntroduccion = fechaDeIntroduccion;
+        
+        Calendar calendario = Calendar.getInstance();
+        int dia = calendario.get(Calendar.DAY_OF_MONTH);
+        int mes = calendario.get(Calendar.MONTH);
+        int anio = calendario.get(Calendar.YEAR);
+        int hora = calendario.get(Calendar.HOUR_OF_DAY);
+        int minutos = calendario.get(Calendar.MINUTE);
+        int segundos = calendario.get(Calendar.SECOND);
+        int milisegundos = calendario.get(Calendar.MILLISECOND);
+
+        this.fechaDeIntroduccion = dia + "/" + (mes+1) + "/" + anio + "." + hora + ":" + minutos + ":"  + segundos + ":" + milisegundos;
     }
 
     public String getNombre() {
@@ -64,13 +68,15 @@ un precio por unidad y una fecha de introducción a la sucursal.*/
         this.precio = precio;
     }
 
-    public Date getFechaDeIntroduccion() {
+    public String getFechaDeIntroduccion() {
         return fechaDeIntroduccion;
     }
 
-    public void setFechaDeIntroduccion(Date fechaDeIntroduccion) {
+    public void setFechaDeIntroduccion(String fechaDeIntroduccion) {
         this.fechaDeIntroduccion = fechaDeIntroduccion;
     }
+
+    
 
     @Override
     public String toString() {
