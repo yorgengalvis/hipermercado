@@ -1,17 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package hipermercado;
+
+package Negocio;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 
-/**
- *
- * @author USER
- */
+
 public class Sucursal {
     
     /*Una sucursal tiene un nombre, una dirección
@@ -28,12 +21,12 @@ y las líneas de productos que en ella se venden. */
     
     
    // Descontinuar una línea de producto en una sucursal específica.
-    public boolean descontinuarProducto(Producto nombre){
+    public boolean descontinuarProducto(String nombre){
           boolean v = false;
         Iterator<Producto> iter = Productos.iterator();
         while (iter.hasNext()) {
             Producto ob = iter.next();
-            if (ob.getNombre().equals(nombre)) {
+            if (ob.getNombre().equalsIgnoreCase(nombre)) {
                 iter.remove();
                 v = true;}
         }
