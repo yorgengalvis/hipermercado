@@ -7,4 +7,5 @@ Conformado por Andrey Rivera - Martin Medina - Yorgen Galvis
 Para el proyecto se necesitan las librerias que se encuentran en la carpeta librerias, las cuales son:
 
 |Jaspert Reports
+Se encuentra en dist/lib/*
 
