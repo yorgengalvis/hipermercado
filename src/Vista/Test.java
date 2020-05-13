@@ -23,6 +23,8 @@ public class Test {
         control.lanzarProducto("Producto4","004", "producto4", 23000, "sucursal3");
         
         control.descontinuarProducto("producto3", "sucursal1");
+        
+        control.eliminarSucursal("sucursal3");
             
         System.out.println(control.listarProductos("sucursal1"));
         System.out.println("*********************************");
@@ -35,6 +37,8 @@ public class Test {
        control.eliminarProductosRagoPrecioSucursal(9000, 10000);
        
        System.out.println(control.listarProductos("sucursal1"));
+       
+       control.generarReporte();
         
         
     }

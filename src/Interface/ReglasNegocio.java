@@ -14,7 +14,7 @@ public interface ReglasNegocio {
     public String productoMasAntiguo();
     public LinkedList<Producto> listarProductos(String nombreSucursal);
     public void eliminarProductosDeSucursalesPorRangoPrecios(double precioInicial, double precioFinal);
-    public void generarReporteSucursales(LinkedList<Sucursal> sucursales);
+    public void generarReporteSucursales();
     
     
 }

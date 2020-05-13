@@ -109,7 +109,7 @@ y las líneas de productos que en ella se venden. */
 
     @Override
     public String toString() {
-        return "Sucursal{" + "nombre=" + nombre + ", direccion=" + direccion + ", LineaDeProductos=" + Productos + '}';
+        return  nombre + ". Dirección: " + direccion  + "\n" +  "Linea de productos:" + "\n" + Productos + '}';
     }
     
     

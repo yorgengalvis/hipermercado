@@ -46,9 +46,18 @@ public class ControlNegocio implements ReglasNegocio{
     }
 
     @Override
-    public void generarReporteSucursales(LinkedList<Sucursal> sucursales) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void generarReporteSucursales() {
+        String sucursales = listarTodasLasSucursales();
+        new Reporte(sucursales);
     }
-
     
+    private String listarTodasLasSucursales(){
+        String msg = "";
+        for(Sucursal s: hipermercado.getSucursales()){
+            msg += s.toString() + "\n" + "\n";
+        }
+        return msg;
+    }
+    
+   
 }

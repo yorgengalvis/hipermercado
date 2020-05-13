@@ -44,5 +44,9 @@ public class ControlVista {
     public void eliminarProductosRagoPrecioSucursal(double precioInicial, double precioFinal){
         controlNegocio.eliminarProductosDeSucursalesPorRangoPrecios(precioInicial, precioFinal);
     }
+    
+    public void generarReporte(){
+        controlNegocio.generarReporteSucursales();
+    }
   
 }

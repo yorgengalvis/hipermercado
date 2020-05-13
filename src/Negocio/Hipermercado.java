@@ -25,7 +25,7 @@ public class Hipermercado {
     public void eliminarSucursal(String nombre) {
         for (Sucursal s : sucursales) {
             if (s.getNombre().equalsIgnoreCase(nombre)) {
-                sucursales.remove();
+                sucursales.remove(s);
                 break;
             }
         }
@@ -83,7 +83,6 @@ public class Hipermercado {
     public LinkedList<Sucursal> getSucursales() {
         return sucursales;
     }
-    
-    
+
 
 }
