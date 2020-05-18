@@ -11,6 +11,6 @@ Se encuentra en dist/lib/*
 
 # VISTA PREVIA
 ![Vista previa]
-(https://raw.githubusercontent.com/yorgengalvis/hipermercado/master/src/Vista/imagenproyecto.png?token=AJGBUBY4NTXIYFVBIPSWMBK6ZPNBI)
+(https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png)
 
 
