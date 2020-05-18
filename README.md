@@ -6,6 +6,9 @@ Conformado por Andrey Rivera - Martin Medina - Yorgen Galvis
 # LIBRERIAS A USAR
 Para el proyecto se necesitan las librerias que se encuentran en la carpeta librerias, las cuales son:
 
-|Jaspert Reports
+# |Jaspert Reports
 Se encuentra en dist/lib/*
+
+# VISTA PREVIA
+(https://github.com/yorgengalvis/hipermercado/blob/master/src/Vista/imagenproyecto.png)
 
