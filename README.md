@@ -10,6 +10,7 @@ Para el proyecto se necesitan las librerias que se encuentran en la carpeta libr
 Se encuentra en dist/lib/*
 
 # VISTA PREVIA
+![Vista previa]
 (https://raw.githubusercontent.com/yorgengalvis/hipermercado/master/src/Vista/imagenproyecto.png?token=AJGBUBY4NTXIYFVBIPSWMBK6ZPNBI)
 
 
