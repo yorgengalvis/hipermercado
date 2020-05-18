@@ -32,7 +32,7 @@ public class ControlNegocio implements ReglasNegocio{
 
     @Override
     public String productoMasAntiguo() {
-    return hipermercado.productoMasAntiguo().toString();
+    return hipermercado.productoMasAntiguo().toString2();
     }
 
     @Override
@@ -47,14 +47,24 @@ public class ControlNegocio implements ReglasNegocio{
 
     @Override
     public void generarReporteSucursales() {
-        String sucursales = listarTodasLasSucursales();
+        String sucursales = listarTodasLasSucursales2();
         new Reporte(sucursales);
     }
-    
-    private String listarTodasLasSucursales(){
+    public String listarTodasLasSucursales2(){
         String msg = "";
         for(Sucursal s: hipermercado.getSucursales()){
-            msg += s.toString() + "\n" + "\n";
+            msg += "\n"+s.getNombre()+"-"+s.getDireccion()+"\n";
+            for(Producto p:s.getProductos()){
+                msg+=""+p.getCodigo()+" "+p.getNombre()+" "+p.getDescripcion()+" "+p.getPrecio()+" "+p.getFechaDeIntroduccion()+"\n";
+            }
+        }
+        return msg;
+    }
+    
+    public String listarTodasLasSucursales(){
+        String msg = "";
+        for(Sucursal s: hipermercado.getSucursales()){
+            msg += s.getNombre()+"-"+s.getDireccion()+";";
         }
         return msg;
     }

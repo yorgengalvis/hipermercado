@@ -14,6 +14,10 @@ y las líneas de productos que en ella se venden. */
     private String direccion;
     private LinkedList<Producto> Productos = new  LinkedList<>();
     
+    public String toString2(){
+        return nombre + " - " +direccion; 
+    }
+    
     //Agrega una linea de producto a la linkedList de Linea de productos
     public void AgregarProducto(Producto producto) {
        Productos.push(producto); } 

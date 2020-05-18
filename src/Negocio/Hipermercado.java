@@ -51,11 +51,9 @@ public class Hipermercado {
 
     public Producto productoMasAntiguo() {
         Producto productoMasAntiguo = null;
-
         for (Sucursal s : sucursales) {
             productoMasAntiguo = s.ObetenerProductoAntiguo();
         }
-
         return productoMasAntiguo;
     }
 
@@ -79,7 +77,7 @@ public class Hipermercado {
             }
         }
     }
-
+    
     public LinkedList<Sucursal> getSucursales() {
         return sucursales;
     }

@@ -2,6 +2,7 @@ package Control;
 
 import Negocio.Producto;
 import Negocio.Sucursal;
+import java.util.LinkedList;
 
 
 public class ControlVista {
@@ -10,7 +11,7 @@ public class ControlVista {
 
     public ControlVista() {
     }
-  
+   
     public void agregarSucursal(String nombre, String direccion){
         Sucursal sucursal = new Sucursal(nombre, direccion);
         controlNegocio.agregarSucursal(sucursal);
@@ -36,7 +37,7 @@ public class ControlVista {
     public String listarProductos(String nombreSucursal){
        String msg = "";
         for(Producto p: controlNegocio.listarProductos(nombreSucursal)){
-            msg += p.toString() + "\n";
+            msg += p.toString2()+";";
         }
         return msg;
     }
@@ -47,6 +48,9 @@ public class ControlVista {
     
     public void generarReporte(){
         controlNegocio.generarReporteSucursales();
+    }
+    public String listarSucursales(){
+        return controlNegocio.listarTodasLasSucursales();
     }
   
 }

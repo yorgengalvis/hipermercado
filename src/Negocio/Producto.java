@@ -79,10 +79,17 @@ un precio por unidad y una fecha de introducción a la sucursal.*/
     
 
     @Override
-    public String toString() {
+    /*public String toString() {
         return "Producto{" + "nombre=" + nombre + ", codigo=" + codigo + ", descripcion=" + descripcion + ", precio=" + precio + ", fechaDeIntroduccion=" + fechaDeIntroduccion + '}';
+    }*/
+    
+    public String toString(){
+        return "Codigo: "+codigo+" Nombre: "+nombre+" Descripcion: "+descripcion+ " Precio: "+precio+"\n";
     }
     
+    public String toString2(){
+        return codigo+ "-"+nombre+"-"+descripcion+"-"+precio+"-"+fechaDeIntroduccion;
+    }
     
     
     
