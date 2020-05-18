@@ -9,8 +9,4 @@ Para el proyecto se necesitan las librerias que se encuentran en la carpeta libr
 # |Jaspert Reports
 Se encuentra en dist/lib/*
 
-# VISTA PREVIA
-![Vista previa]
-(https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png)
-
 
